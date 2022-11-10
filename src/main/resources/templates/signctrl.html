@@ -1,0 +1,8 @@
+<script th:src="@{/js/signctrl.js}" src="../static/js/signctrl.js" type="text/javascript"></script>
+<link type="text/css" th:href="@{/css/signctrl.css}" href="../static/css/signctrl.css" rel="stylesheet"/>
+<input type="submit" value="开始签到" onClick="startsign()" id="btnstart" class="btn" style="visibility: visible;">
+<input type="submit" value="停止签到" onClick="stopsign()" id="btnstop" class="btn" style="visibility: hidden;">
+<div id="show">
+    <div><img src="" alt="" id="img"/></div>
+    <div><p id="yqd">已签到:</p><p id="wqd">未签到:</p></div>
+</div>

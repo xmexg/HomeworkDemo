@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>社团请假信息</title>
+	<link type="text/css" th:href="@{/css/vacateinfo.css}" href="../static/css/vacateinfo.css" rel="stylesheet"/>
+	<script th:src="@{/js/vacateinfo.js}" src="../static/js/vacateinfo.js" type="text/javascript"></script>
+	<script th:src="@{/js/jquery.min.js}" src="../static/js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<center><h1>社团请假信息</h1></center>
+	<div id="info">
+		<p id="info_total">总计：</p>
+		<p id="info_reality">实到：</p>
+		<p id="info_vacate">请假：</p>
+	</div>
+	<hr>
+	<div id="list">
+		<table id="listtable">
+		</table>
+	</div>
+	<script>
+		$.ajax({
+		url: '/getvacatestu',
+		type: 'POST',
+		cache: false,
+		data: new FormData($('#checkform')[0]),
+		processData: false,
+		contentType: false,
+		success:function (msg) {
+			if(msg.lenght!=0){
+				$("#listtable").html(msg);
+			}
+		}
+	});
+	</script>
+</body>
+</html>

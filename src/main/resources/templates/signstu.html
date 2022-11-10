@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>学生签到</title>
+	<link th:href="@{/css/signstu.css}" href="../static/css/signstu.css" rel="stylesheet"/>
+	<script th:src="@{/js/signstu.js}" src="../static/js/signstu.js" type="text/javascript"></script>
+</head>
+<body>
+	<center><h1>社团学生签到</h1></center>
+	<div id="info">
+		<p id="info_total">总计：</p>
+		<p id="info_reality">实到：</p>
+		<p id="info_vacate">请假：</p>
+	</div>
+	<hr>
+	<div id="drawdiv">
+		<!-- <table border="5" id="drawtable">
+			<caption>讲台<p id="rotate" onClick="rotate()">点我旋转方向</p></caption>
+			<tr>
+				<td colspan="8"></td><th>讲台</th><td colspan="8"><p id="rotate" onClick="rotate()">点我旋转方向</p></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td rowspan="10"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td rowspan="10"></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+		</table> -->
+	</div>
+
+	<!-- 使用luckysheet -->
+
+	<div id="luckysheet" style="margin:0px;padding:0px;position:absolute;width:100%;height:100%;left: 0px;top: 0px;"></div>
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/css/pluginsCss.css' />
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/plugins.css' />
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/luckysheet/dist/css/luckysheet.css' />
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/luckysheet/dist/assets/iconfont/iconfont.css' />
+		<script src="https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/js/plugin.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/luckysheet/dist/luckysheet.umd.js"></script>
+		<script>
+			$(function () {
+				//配置项
+				var options = {
+					container: 'luckysheet' //luckysheet为容器id
+				}
+				luckysheet.create(options)
+			})
+		</script>
+		
+</body>
+</html>

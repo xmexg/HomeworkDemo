@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>社团请假</title>
+	<link type="text/css" th:href="@{/css/vacate.css}" href="../static/css/vacate.css" rel="stylesheet"/>
+	<script th:src="@{/js/vacate.js}" src="../static/js/vacate.js" type="text/javascript"></script>
+	<script th:src="@{/js/jquery.min.js}" src="../static/js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<center><h1>社团请假</h1></center>
+	<div id="info">
+		<p id="info_total">总计：</p>
+		<p id="info_reality">实到：</p>
+		<p id="info_vacate">请假：</p>
+	</div>
+	<hr>
+	<div id="content">
+		<div id="formlist" class="form">
+			<h2>我要请假</h2>
+			<form name="input" method="post" enctype="multipart/form-data" id="uploadForm">
+				<p>姓名：<input type="text" name="name"/></p>
+				<p>假条：<input type="file" name="file" /></p>
+				<p>原由：<input type="text" name="reason"/></p>
+			</form>
+			<input type="submit" value="提交" onClick="subform()" id="btn">
+			<p id="result"></p>
+		</div>
+		
+		<div id="formlist2" class="form">
+			<h2>取消请假</h2>
+			<form name="input" method="post" enctype="multipart/form-data" id="uploadForm2">
+				<p>姓名：<input type="text" name="name"/></p>
+			</form>
+			<input type="submit" value="提交" onClick="subform2()" id="btn2">
+			<p id="result2"></p>
+		</div>
+	</div>
+</body>
+</html>

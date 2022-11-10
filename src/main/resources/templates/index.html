@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>社团签到表</title>
+	<link type="text/css" th:href="@{/css/index.css}" href="../static/css/index.css" rel="stylesheet"/>
+	<script th:src="@{/js/index.js}" src="../static/js/index.js" type="text/javascript"></script>
+	<script th:src="@{/js/jquery.min.js}" src="../static/js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<center><h1>社团签到表</h1></center>
+	<div id="info">
+		<p id="info_total">总计：</p>
+		<p id="info_reality">实到：</p>
+		<p id="info_vacate">请假：</p>
+	</div>
+	<hr>
+	<div id="function">
+		<a th:href="@{/vacate}"><div id="function_vacate" class="stu" >我要<br>请假</div></a>
+		<a th:href="@{/vacate}"><div id="function_cancelvacate" class="stu">取消<br>请假</div></a>
+		<a th:href="@{/sign}"><div id="function_sign" class="stu">开始<br>签到</div></a>
+		<a th:href="@{/detail}"><div id="detail" class="man">签到<br>详情</div></a>
+		<a th:href="@{/vacateinfo}"><div id="vacateinfo" class="stu">请假<br>列表</div></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+	background: linear-gradient(90deg,#1c92d2,#f2fcfe);
+}
+
+h1{
+	color: #46433b;
+}
+
+#info{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: center;
+}
+
+#info p{
+	text-align: center;
+	display: block;
+	width: 10%;
+	min-width: 5em;
+	float: left;
+}
