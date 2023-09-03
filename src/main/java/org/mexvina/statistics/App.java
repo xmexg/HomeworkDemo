@@ -17,8 +17,8 @@ public class App
 	public static String version = "v0.1.1";
 	public static String logo = "      ,\r\n"
 			+ "  /\\^/`\\   该程序是软件工程4组作业\r\n"
-			+ " | \\/   |  小组成员:徐光鑫、白宇轩、陈文博\t版本:"+version+"\r\n"
-			+ " | |    |         张彬、陈文博、杨鹏飞\t\t日期:2022年10月30日\r\n"
+			+ " | \\/   |  \t版本:"+version+"\r\n"
+			+ " | |    |         \t\t日期:2022年10月30日\r\n"
 			+ " \\ \\    /                                                     _ _\r\n"
 			+ "  '\\\\//'                                                    _{ ' }_\r\n"
 			+ "    ||                                                     { `.!.` }\r\n"
