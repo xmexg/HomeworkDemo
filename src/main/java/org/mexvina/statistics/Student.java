@@ -9,9 +9,6 @@ public class Student {
 	public static int VACATESTU_NUM;//请假人数
 	
 	Student(){
-		char[] ch = {'\u6C34','\u5370','\u003A','\n','\u8FD9','\u662F','\u0020','\u0032','\u0030','\u0032','\u0031','\u7EA7','\u8F6F','\u4E00','\u0078','\u0067','\u0078','\u0020','\u0062','\u0079','\u0078','\u0020','\u0063','\u0077','\u0062','\u0020','\u006C','\u007A','\u0063','\u0020','\u0079','\u0070','\u0066','\u0020','\u007A','\u0062','\u0020','\u7684','\u8F6F','\u4EF6','\u5DE5','\u7A0B','\u4F5C','\u4E1A','\u0021','\n','\u65E5','\u671F','\u003A','\u0032','\u0030','\u0032','\u0032','\u5E74','\u0031','\u0030','\u6708','\u0031','\u0034','\u65E5'};
-		if(App.logo == null)
-			System.out.println(new String(ch));
 		try {
 			File file = new File("total.txt");
 			if(!file.exists()) {
